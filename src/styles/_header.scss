@@ -1,0 +1,36 @@
+header {
+    height: 100px;
+    padding: 0 48px;
+
+    .inner-header {
+        position: relative;
+        z-index: 10;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo a {
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            color: var(--color-black);
+        }
+        .menu {
+            button {
+                border: none;
+                background: none;
+                outline: none;
+                cursor: pointer;
+                font-size: 0.8rem;
+                mix-blend-mode: difference;
+
+                svg {
+                    width: 30px;
+                    height: 30px;
+                    fill: var(--color-black);
+                }
+            }
+        }
+    }
+}
