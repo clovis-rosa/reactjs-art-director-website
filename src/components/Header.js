@@ -53,17 +53,15 @@ const Header = ({ history }) => {
 
     return (
         <header>
-            <div className='container'>
-                <div className='wrapper'>
-                    <div className='inner-header'>
-                        <div className='logo'>
-                            <Link to='/'>HAMBRG.</Link>
-                        </div>
-                        <div className='menu'>
-                            <button disabled={disabled} onClick={handleMenu}>
-                                {state.menuName}
-                            </button>
-                        </div>
+            <div className='header-container'>
+                <div className='inner-header'>
+                    <div className='logo'>
+                        <Link to='/'>HAMBRG.</Link>
+                    </div>
+                    <div className='menu'>
+                        <button disabled={disabled} onClick={handleMenu}>
+                            {state.menuName}
+                        </button>
                     </div>
                 </div>
             </div>

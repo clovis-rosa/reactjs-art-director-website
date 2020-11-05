@@ -1,0 +1,88 @@
+.profile {
+    padding: 40px 0;
+    margin-top: 50px;
+
+    &-container {
+        width: 1400px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &-title {
+        grid-column: 1/4;
+        p {
+            font-size: clamp(0.8rem, calc(0.6rem + 2vw), 1.15rem);
+            line-height: 1.2;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+
+    &-contact {
+        grid-column: 4 / 6;
+        display: inline-flex;
+        flex-direction: column;
+
+        a {
+            font-size: clamp(0.8rem, calc(0.6rem + 2vw), 1.15rem);
+            line-height: 1.2;
+            font-weight: 400;
+
+            text-decoration: none;
+            font-style: initial;
+            color: inherit;
+        }
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width: 768px) {
+    .profile {
+        padding: 20px 10px;
+
+        &-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+/* Small Tablets (portrait) ----------- */
+@media only screen and (max-width: 480px) {
+    .profile {
+        padding: 20px 10px;
+        margin-top: 0;
+
+        &-container {
+            display: flex;
+            gap: 40px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+    .profile {
+        padding: 20px 10px;
+        margin-top: 0;
+
+        &-container {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+}
