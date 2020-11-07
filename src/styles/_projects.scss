@@ -1,0 +1,181 @@
+.project {
+    padding: 40px 0;
+    margin-top: 50px;
+    height: 1000px;
+
+    &-container {
+        max-width: 96%;
+        margin: 0 auto;
+    }
+
+    &-article {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        &:not(:first-child) {
+            margin-top: 60px;
+        }
+
+        &:nth-child(even) {
+            align-items: flex-end;
+        }
+    }
+
+    &-link {
+        font-size: clamp(0.8rem, calc(0.6rem + 2vw), 1rem);
+        text-decoration: none;
+        color: var(--color-dark);
+    }
+
+    .h2 {
+        // grid-column: 1/9;
+    }
+
+    &-image {
+        display: block;
+        max-width: 1100px;
+        margin-top: 15px;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .vhs-filter {
+        overflow: hidden;
+        position: relative;
+
+        &__r,
+        &__g {
+            left: 0;
+            mix-blend-mode: screen;
+            position: absolute;
+            top: 0;
+            transition: transform 0.4s;
+            z-index: 1;
+        }
+
+        &__r {
+            filter: url("#r");
+            transform: translate(1px, 2px);
+        }
+        &__g {
+            filter: url("#g");
+            transform: translate(-2px, -1px);
+        }
+        &__b {
+            filter: url("#b");
+        }
+
+        &:hover {
+            .vhs-filter__r,
+            .vhs-filter__g {
+                transform: translate(0);
+            }
+        }
+    }
+
+    .project-svg {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 1224px) {
+    .project {
+        // padding: 20px 10px;
+        // margin-top: 0;
+
+        &-article {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            &:not(:first-child) {
+                margin-top: 40px;
+            }
+        }
+
+        &-image {
+            display: block;
+            max-width: 600px;
+            margin-top: 15px;
+        }
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width: 768px) {
+    .project {
+        padding: 20px 10px;
+        margin-top: 0;
+
+        &-article {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            &:not(:first-child) {
+                margin-top: 30px;
+            }
+        }
+
+        &-image {
+            display: block;
+            max-width: 500px;
+            margin-top: 15px;
+        }
+    }
+}
+
+/* Small Tablets (portrait) ----------- */
+@media only screen and (max-width: 480px) {
+    .project {
+        padding: 20px 10px;
+        margin-top: 0;
+
+        &-article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &:not(:first-child) {
+                margin-top: 30px;
+            }
+        }
+
+        &-image {
+            margin-top: 15px;
+        }
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+    .project {
+        padding: 20px 10px;
+        margin-top: 0;
+
+        &-article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &:not(:first-child) {
+                margin-top: 30px;
+            }
+        }
+
+        &-image {
+            margin-top: 15px;
+        }
+    }
+}

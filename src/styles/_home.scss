@@ -3,8 +3,7 @@
     margin-top: 50px;
 
     &-container {
-        width: 1400px;
-        max-width: 95%;
+        max-width: 96%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -15,7 +14,7 @@
     &-title {
         grid-column: 1/4;
         p {
-            font-size: clamp(0.8rem, calc(0.6rem + 2vw), 1.15rem);
+            font-size: clamp(0.8rem, calc(0.6rem + 2vw), 1.1rem);
             line-height: 1.2;
             font-weight: 400;
             margin: 0;
@@ -23,12 +22,12 @@
     }
 
     &-contact {
-        grid-column: 4 / 6;
+        grid-column: 5/8;
         display: inline-flex;
         flex-direction: column;
 
         a {
-            font-size: clamp(0.8rem, calc(0.6rem + 2vw), 1.15rem);
+            font-size: clamp(0.8rem, calc(0.6rem + 2vw), 1.1rem);
             line-height: 1.2;
             font-weight: 400;
 
@@ -40,8 +39,12 @@
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-    /* Styles */
+@media only screen and (max-width: 1224px) {
+    .profile {
+        &-contact {
+            grid-column: 6/9;
+        }
+    }
 }
 
 /* iPads (portrait) ----------- */
