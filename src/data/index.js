@@ -1,9 +1,9 @@
 export default [
     {
         id: 1,
-        title: "Alma",
-        type: "Editoral, art direction",
-        image: "alexander-krivitskiy-unsplash.webp",
+        title: "Buchdruck",
+        type: "Typography, art design",
+        image: "mika-baumeister-unsplash-01.webp",
     },
     {
         id: 2,
@@ -19,8 +19,8 @@ export default [
     },
     {
         id: 4,
-        title: "El Almendro",
-        type: "Spot, ad campaign",
+        title: "Seeds Planted in Concrete",
+        type: "Art Design Director",
         image: "thought-catalog-unsplash-01.webp",
     },
 ]

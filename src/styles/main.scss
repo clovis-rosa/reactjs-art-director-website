@@ -4,6 +4,7 @@
 
 :root {
     --color-red: #e20001;
+    --color-orange: #c3654e;
     --color-black: #191919;
     --color-dark: #222222;
     --color-pink: #d4c9c9;
@@ -68,3 +69,4 @@ element {
 @import "./hamburger";
 @import "./home";
 @import "./projects";
+@import "./footer";

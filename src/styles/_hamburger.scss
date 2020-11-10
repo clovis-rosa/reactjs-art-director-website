@@ -42,7 +42,7 @@
                         padding: 0 60px;
                         li {
                             list-style: none;
-                            font-size: 6rem;
+                            font-size: 4rem;
                             font-weight: 700;
                             cursor: pointer;
                             height: 135px;
@@ -62,12 +62,14 @@
                 }
             }
         }
+    }
+}
 
-        /* Desktops and laptops ----------- */
-        @media only screen and (max-width: 1224px) {
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 1224px) {
+    .hamburger-menu {
+        .menu-layer {
             .wrapper {
-                //  padding: 0;
-
                 .menu-links {
                     nav {
                         ul {
@@ -78,52 +80,36 @@
                 }
             }
         }
+    }
+}
 
-        /* iPads (portrait) ----------- */
-        @media only screen and (max-width: 768px) {
+/* iPads (portrait) ----------- */
+@media only screen and (max-width: 768px) {
+    .hamburger-menu {
+        .menu-layer {
             .wrapper {
-                //  padding: 0;
-
-                .menu-links {
-                    justify-content: center;
-
-                    nav {
-                        ul {
-                            li {
-                                font-size: 4rem;
-                                width: 400px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        /* Small Tablets (portrait) ----------- */
-        @media only screen and (max-width: 480px) {
-            .wrapper {
-                //  padding: 0;
-
                 .menu-links {
                     justify-content: center;
 
                     nav {
                         ul {
-                            padding: 0 40px;
                             li {
-                                font-size: 3rem;
-                                width: 300px;
+                                font-size: 4.5rem;
+                                width: 550px;
                             }
                         }
                     }
                 }
             }
         }
+    }
+}
 
-        /* Smartphones (portrait) ----------- */
-        @media only screen and (max-width: 320px) {
+/* Small Tablets (portrait) ----------- */
+@media only screen and (max-width: 480px) {
+    .hamburger-menu {
+        .menu-layer {
             .wrapper {
-                //  padding: 0;
                 .menu-links {
                     justify-content: center;
 
@@ -132,6 +118,29 @@
                             padding: 0 40px;
                             li {
                                 font-size: 2.5rem;
+                                width: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+    .hamburger-menu {
+        .menu-layer {
+            .wrapper {
+                .menu-links {
+                    justify-content: center;
+
+                    nav {
+                        ul {
+                            padding: 0 40px;
+                            li {
+                                font-size: 2rem;
                                 height: 100px;
                                 width: 250px;
                             }

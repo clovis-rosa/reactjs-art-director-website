@@ -4,8 +4,9 @@ import {
     Route,
     useLocation,
 } from "react-router-dom"
-import Header from "./components/Header"
 import Home from "./pages/home"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 const App = () => {
     return (
@@ -19,6 +20,8 @@ const App = () => {
                 <Route exact path='/contact-us' component={Contact} />
                 <Route path='*' component={NoMatch} />
             </Switch>
+
+            <Footer />
         </Router>
     )
 }

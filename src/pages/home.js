@@ -14,12 +14,8 @@ const Home = () => {
                         <a href='mailto:clovis.rosa@outlook.com'>
                             ︎clovis.rosa@outlook.com
                         </a>
-                        <a href='https://github.com/clovis-rosa'>
-                            ︎rosa.clovis
-                        </a>
-                        <a href='https://twitter.com/rosaclovis'>
-                            ︎@rosaclovis
-                        </a>
+                        <a href='https://github.com/clovis-rosa'>︎behance</a>
+                        <p>︎+123 4567890</p>
                     </address>
                 </div>
             </section>
