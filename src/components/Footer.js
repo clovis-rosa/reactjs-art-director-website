@@ -12,11 +12,15 @@ const Footer = () => {
                         together!
                     </p>
                     <address className='footer-contact'>
-                        <a href='mailto:clovis.rosa@outlook.com'>
-                            ︎clovis.rosa@outlook.com
-                        </a>
-                        <a href='https://github.com/clovis-rosa'>︎behance</a>
-                        <p>︎+123 4567890</p>
+                        <div>
+                            <a href='mailto:clovis.souzarosa@gmail.com'>
+                                ︎clovis.souzarosa@gmail.com
+                            </a>
+                            <a href='https://github.com/clovis-rosa'>
+                                ︎github
+                            </a>
+                            <p>︎+123 4567890</p>
+                        </div>
                     </address>
                 </div>
             </div>

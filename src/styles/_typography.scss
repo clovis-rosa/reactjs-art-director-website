@@ -1,0 +1,43 @@
+/*
+   Formula:
+
+   font-size: calc([min size] + ([max size] - [min size]) * ((100vw - [min viewport width]) / ([max viewport width] - [min viewport width])));
+*/
+
+h1 {
+    font-size: calc(32px + (40 - 32) * ((100vw - 320px) / (1600 - 320)));
+}
+
+h2 {
+    font-size: calc(28px + (32 - 28) * ((100vw - 320px) / (1600 - 320)));
+}
+
+h3 {
+    font-size: calc(24px + (28 - 24) * ((100vw - 320px) / (1600 - 320)));
+}
+
+h4 {
+    font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1600 - 320)));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--font-family-secondary);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+}
+
+a,
+p {
+    font-family: var(--font-family-primary);
+    font-size: calc(18px + (30 - 18) * ((100vw - 320px) / (1600 - 320)));
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}

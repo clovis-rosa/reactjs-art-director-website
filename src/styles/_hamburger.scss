@@ -1,4 +1,4 @@
-.hamburger-menu {
+.hamburger {
     display: none;
     z-index: 9;
     top: 0;
@@ -8,7 +8,7 @@
     height: 100%;
     width: 100%;
 
-    .menu-secondary-background-color {
+    &-secondary-background-color {
         background: var(--color-black);
         top: 0;
         left: 0;
@@ -19,135 +19,90 @@
         width: 100%;
         z-index: -1;
     }
-    .menu-layer {
+
+    &-layer {
         position: relative;
         background: var(--color-red);
         height: 100%;
         overflow: hidden;
+    }
 
-        .wrapper {
-            position: relative;
+    &-container {
+        width: 1280px;
+        min-width: 80%;
+        margin: 0 auto;
+    }
 
-            .menu-links {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                position: relative;
-                top: 200px;
+    &-wrapper {
+        position: relative;
+        padding: 0 48px;
+    }
 
-                nav {
-                    display: block;
-                    ul {
-                        margin: 0;
-                        padding: 0 60px;
-                        li {
-                            list-style: none;
-                            font-size: 4rem;
-                            font-weight: 700;
-                            cursor: pointer;
-                            height: 135px;
-                            overflow: hidden;
-                            position: relative;
-                            width: 700px;
-                            a {
-                                position: absolute;
-                                color: #fff;
-                                text-decoration: none;
-                                &:hover {
-                                    color: var(--color-black);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 200px;
+    }
+
+    &-nav {
+        display: block;
+    }
+
+    &-list {
+        margin: 0;
+        padding: 0 60px;
+    }
+
+    &-item {
+        list-style: none;
+        font-size: 4rem;
+        font-weight: 700;
+
+        height: 135px;
+        overflow: hidden;
+        position: relative;
+        width: 700px;
+    }
+
+    &-link {
+        position: absolute;
+        cursor: pointer;
+        font-family: var(--font-family-logo);
+        font-size: calc(30px + (90 - 30) * ((100vw - 320px) / (1600 - 320)));
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            color: var(--color-black);
         }
     }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (max-width: 1224px) {
-    .hamburger-menu {
-        .menu-layer {
-            .wrapper {
-                .menu-links {
-                    nav {
-                        ul {
-                            li {
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (max-width: 768px) {
-    .hamburger-menu {
-        .menu-layer {
-            .wrapper {
-                .menu-links {
-                    justify-content: center;
-
-                    nav {
-                        ul {
-                            li {
-                                font-size: 4.5rem;
-                                width: 550px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    .hamburger {
     }
 }
 
 /* Small Tablets (portrait) ----------- */
 @media only screen and (max-width: 480px) {
-    .hamburger-menu {
-        .menu-layer {
-            .wrapper {
-                .menu-links {
-                    justify-content: center;
-
-                    nav {
-                        ul {
-                            padding: 0 40px;
-                            li {
-                                font-size: 2.5rem;
-                                width: 300px;
-                            }
-                        }
-                    }
-                }
-            }
+    .hamburger {
+        &-wrapper {
+            padding: 0;
         }
     }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
-    .hamburger-menu {
-        .menu-layer {
-            .wrapper {
-                .menu-links {
-                    justify-content: center;
-
-                    nav {
-                        ul {
-                            padding: 0 40px;
-                            li {
-                                font-size: 2rem;
-                                height: 100px;
-                                width: 250px;
-                            }
-                        }
-                    }
-                }
-            }
+    .hamburger {
+        &-wrapper {
+            padding: 0;
         }
     }
 }

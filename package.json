@@ -1,15 +1,32 @@
 {
-  "name": "hamburger-menu",
+  "name": "reactjs-art-director-website",
   "version": "0.1.0",
+  "description": "[React, SCSS] ReactJS Art Director Website",
+  "author": "Clovis Rosa <clovis.souzarosa@gmail.com>",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clovis-rosa/reactjs-art-director-website.git"
+  },
+  "license": "0BSD",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "router",
+    "scss",
+    "portfolio",
+    "template",
+    "design"
+  ],
   "dependencies": {
+    "disable-scroll": "^0.5.1",
     "gsap": "^3.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
-    "sass": "^1.28.0"
+    "sass": "^1.29.0"
   },
   "scripts": {
     "start": "react-scripts start",

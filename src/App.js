@@ -15,9 +15,9 @@ const App = () => {
 
             <Switch>
                 <Route exact path='/' component={Home} />
-                <Route exact path='/resources' component={Resources} />
-                <Route exact path='/solutions' component={Solutions} />
-                <Route exact path='/contact-us' component={Contact} />
+                <Route exact path='/work' component={Work} />
+                <Route exact path='/concept' component={Concept} />
+                <Route exact path='/about-me' component={About} />
                 <Route path='*' component={NoMatch} />
             </Switch>
 
@@ -28,15 +28,15 @@ const App = () => {
 
 export default App
 
-function Resources() {
+function Work() {
     return <p>Discover our numerous opportunities</p>
 }
 
-function Solutions() {
+function Concept() {
     return <p>Solutions that help you.</p>
 }
 
-function Contact() {
+function About() {
     return <p>Feel free to reach us.</p>
 }
 

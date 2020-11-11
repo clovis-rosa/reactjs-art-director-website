@@ -1,71 +1,61 @@
-header {
-    height: 100px;
-    padding: 20px 0;
+.header {
+    // height: 100px;
+    padding: 20px 10px;
 
-    .header-container {
+    &-container {
         max-width: 96%;
         margin: 0 auto;
+    }
 
-        .inner-header {
-            position: relative;
-            z-index: 10;
-            // height: 100px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    &-inner {
+        position: relative;
+        z-index: 10;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-            .logo a {
-                font-weight: 700;
-                font-size: 32px;
-                text-decoration: none;
-                color: var(--color-black);
-            }
-            .menu {
-                button {
-                    border: none;
-                    background: none;
-                    outline: none;
-                    padding: 0;
-                    cursor: pointer;
-                    font-size: 0.8rem;
-                    mix-blend-mode: difference;
+    &-logo a {
+        font-family: var(--font-family-logo);
+        font-weight: 700;
+        font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1600 - 320)));
+        text-decoration: none;
+        color: var(--color-black);
+    }
 
-                    svg {
-                        width: 30px;
-                        height: 30px;
-                        fill: var(--color-black);
-                    }
-                }
+    &-menu {
+        button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 0;
+            cursor: pointer;
+            font-size: 0.8rem;
+            mix-blend-mode: difference;
+
+            svg {
+                width: 30px;
+                height: 30px;
+                fill: var(--color-black);
             }
         }
     }
 
     /* Desktops and laptops ----------- */
-    @media only screen and (min-width: 1224px) {
+    @media only screen and (max-width: 1224px) {
         /* Styles */
     }
 
     /* iPads (portrait) ----------- */
     @media only screen and (max-width: 768px) {
-        padding: 20px 10px;
-
-        .header-container {
-        }
     }
 
     /* Small Tablets (portrait) ----------- */
     @media only screen and (max-width: 480px) {
-        padding: 20px 10px;
-
-        .header-container {
-        }
     }
 
     /* Smartphones (portrait) ----------- */
     @media only screen and (max-width: 320px) {
-        padding: 20px 10px;
-
-        .header-container {
-        }
     }
 }

@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react"
 import { gsap } from "gsap"
 import { Link } from "react-router-dom"
+import disableScroll from "disable-scroll"
 
 import {
     staggerText,
@@ -30,12 +31,17 @@ const Hamburger = ({ state }) => {
             staggerRevealClose(reveal2, reveal1)
             // Set menu to display none
             gsap.to(menuLayer, { duration: 1, css: { display: "none" } })
+            // re-enable scroll
+            disableScroll.off()
         } else if (
             state.clicked === true ||
             (state.clicked === true && state.initial === null)
         ) {
             // Set menu to display block
-            gsap.to(menuLayer, { duration: 0, css: { display: "block" } })
+            gsap.to(menuLayer, {
+                duration: 0,
+                css: { display: "block" },
+            })
             //Allow menu to have height of 100%
             gsap.to([reveal1, reveal2], {
                 duration: 0,
@@ -45,51 +51,56 @@ const Hamburger = ({ state }) => {
             staggerReveal(reveal1, reveal2)
             // fadeInUp(info)
             staggerText(line1, line2, line3)
+            // prevent scrolling
+            disableScroll.on()
         }
     }, [state])
 
     return (
-        <div ref={(el) => (menuLayer = el)} className='hamburger-menu'>
+        <div ref={(el) => (menuLayer = el)} className='hamburger'>
             <div
                 ref={(el) => (reveal1 = el)}
-                className='menu-secondary-background-color'></div>
-            <div ref={(el) => (reveal2 = el)} className='menu-layer'>
-                <div className='container'>
-                    <div className='wrapper'>
-                        <div className='menu-links'>
-                            <nav>
-                                <ul>
-                                    <li>
+                className='hamburger-secondary-background-color'></div>
+            <div ref={(el) => (reveal2 = el)} className='hamburger-layer'>
+                <div className='hamburger-container'>
+                    <div className='hamburger-wrapper'>
+                        <div className='hamburger-menu'>
+                            <nav className='hamburger-nav'>
+                                <ul className='hamburger-list'>
+                                    <li className='hamburger-item'>
                                         <Link
+                                            className='hamburger-link'
                                             onMouseEnter={(e) => handleHover(e)}
                                             onMouseOut={(e) =>
                                                 handleHoverExit(e)
                                             }
                                             ref={(el) => (line1 = el)}
-                                            to='/resources'>
-                                            Resources
+                                            to='/work'>
+                                            Work
                                         </Link>
                                     </li>
-                                    <li>
+                                    <li className='hamburger-item'>
                                         <Link
+                                            className='hamburger-link'
                                             onMouseEnter={(e) => handleHover(e)}
                                             onMouseOut={(e) =>
                                                 handleHoverExit(e)
                                             }
                                             ref={(el) => (line2 = el)}
-                                            to='/solutions'>
-                                            Solutions
+                                            to='/concept'>
+                                            Concept
                                         </Link>
                                     </li>
-                                    <li>
+                                    <li className='hamburger-item'>
                                         <Link
+                                            className='hamburger-link'
                                             onMouseEnter={(e) => handleHover(e)}
                                             onMouseOut={(e) =>
                                                 handleHoverExit(e)
                                             }
                                             ref={(el) => (line3 = el)}
-                                            to='/contact-us'>
-                                            Contact us
+                                            to='/about-me'>
+                                            About me
                                         </Link>
                                     </li>
                                 </ul>

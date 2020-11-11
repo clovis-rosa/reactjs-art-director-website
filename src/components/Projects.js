@@ -17,7 +17,7 @@ const Projects = () => {
                                 {title}
                                 <span> ︎</span>
                             </Link>
-                            <h2 className='project-h2 h2'>{type}</h2>
+                            <h2 className='project-h2'>{type}</h2>
                             <Link
                                 className='project-image'
                                 to={title

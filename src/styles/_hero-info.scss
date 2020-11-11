@@ -1,4 +1,4 @@
-.profile {
+.hero {
     padding: 40px 0;
     margin-top: 50px;
 
@@ -13,11 +13,11 @@
 
     &-title {
         grid-column: 1/4;
-        p {
-            font-size: clamp(0.8rem, calc(0.6rem + 2vw), 1.1rem);
-            line-height: 1.2;
-            font-weight: 400;
-            margin: 0;
+        h1 {
+            font-family: var(--font-family-primary);
+            font-size: calc(
+                18px + (30 - 18) * ((100vw - 320px) / (1600 - 320))
+            );
         }
     }
 
@@ -25,58 +25,28 @@
         grid-column: 5/8;
         display: inline-flex;
         flex-direction: column;
-
-        a {
-            font-size: clamp(0.8rem, calc(0.6rem + 2vw), 1.1rem);
-            line-height: 1.2;
-            font-weight: 400;
-
-            text-decoration: none;
-            font-style: initial;
-            color: inherit;
-
-            &:hover {
-                color: var(--color-orange);
-            }
-        }
-
-        p {
-            font-size: clamp(0.8rem, calc(0.6rem + 2vw), 1.1rem);
-            line-height: 1.2;
-            font-weight: 400;
-            font-style: normal;
-            margin: 0;
-        }
     }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (max-width: 1224px) {
-    .profile {
-        &-container {
-            display: grid;
-        }
-
+    .hero {
         &-contact {
-            grid-column: 6/9;
+            grid-column: 7/10;
         }
     }
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (max-width: 768px) {
-    .profile {
+    .hero {
         padding: 20px 10px;
-
-        &-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
     }
 }
 
 /* Small Tablets (portrait) ----------- */
 @media only screen and (max-width: 480px) {
-    .profile {
+    .hero {
         padding: 20px 10px;
         margin-top: 0;
 
@@ -95,7 +65,7 @@
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
-    .profile {
+    .hero {
         padding: 20px 10px;
         margin-top: 0;
 

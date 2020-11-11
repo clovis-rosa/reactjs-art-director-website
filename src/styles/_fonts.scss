@@ -1,9 +1,9 @@
 @font-face {
-    font-family: "Icons";
+    font-family: "Titling Gothic FB Wide";
     font-style: normal;
-    font-weight: 400;
-    src: local("Icon Font Regular"), local("Icon Font Regular"),
-        url("/fonts/iconfont-regular-0.9.1.woff") format("woff");
+    font-weight: 700;
+    src: local("TitlingGothicFBWide Bold"), local("Titling Gothic FB Wide"),
+        url("/fonts/titlinggothicfbwide-bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -12,4 +12,12 @@
     font-weight: 400;
     src: local("Neue Haas Grotesk"), local("Neue Haas Grotesk"),
         url("/fonts/neuehaasgrotesktext-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Icon Font Regular"), local("Icon Font Regular"),
+        url("/fonts/iconfont-regular-0.9.1.woff") format("woff");
 }

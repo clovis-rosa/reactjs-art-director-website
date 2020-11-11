@@ -3,48 +3,28 @@
     margin: 50px 0;
 
     &-container {
-        max-width: 96%;
+        max-width: 85%;
         margin: 0 auto;
     }
 
     &-content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        font-size: clamp(0.8rem, calc(0.6rem + 2vw), 0.8rem);
+        padding: 40px;
     }
 
     &-text {
-        padding: 40px 40px 40px 60px;
         margin: 0;
     }
 
     &-contact {
-        padding: 40px;
-        //   margin: 0 auto;
-        display: inline-flex;
-        flex-direction: column;
-
-        a {
-            line-height: 1.2;
-            font-weight: 400;
-
-            text-decoration: none;
-            font-style: initial;
-            color: inherit;
-
-            &:hover {
-                color: var(--color-orange);
-            }
-        }
-
-        p {
-            line-height: 1.2;
-            font-weight: 400;
-            font-style: normal;
-            margin: 0;
+        div {
+            display: inline-flex;
+            flex-direction: column;
         }
     }
 }
@@ -56,21 +36,35 @@
         margin: 30px 0;
 
         &-content {
+            gap: 40px;
+            grid-template-columns: auto;
             align-items: flex-start;
-        }
-
-        &-text {
-            padding: 20px 20px 20px 60px;
-        }
-
-        &-contact {
-            padding: 20px;
         }
     }
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (max-width: 768px) {
+    .footer {
+        padding: 20px 20px;
+        margin: 30px 0;
+
+        &-content {
+            gap: 40px;
+            padding: 20px;
+            grid-template-columns: auto;
+            align-items: flex-start;
+        }
+
+        &-text {
+            max-width: 550px;
+        }
+
+        &-contact {
+            display: inline-flex;
+            align-items: flex-start;
+        }
+    }
 }
 
 /* Small Tablets (portrait) ----------- */
@@ -79,17 +73,20 @@
         padding: 20px 20px;
         margin: 30px 0;
 
+        &-container {
+            max-width: 90%;
+        }
+
         &-content {
+            gap: 40px;
+            padding: 20px;
             grid-template-columns: auto;
-            align-items: flex-start;
+            align-items: center;
         }
 
-        &-text {
-            padding: 20px;
-        }
-
+        &-text,
         &-contact {
-            padding: 20px;
+            text-align: center;
         }
     }
 }
@@ -97,20 +94,23 @@
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
     .footer {
-        padding: 20px 20px;
+        padding: 20px 10px;
         margin: 30px 0;
 
+        &-container {
+            max-width: 90%;
+        }
+
         &-content {
+            gap: 40px;
+            padding: 10px;
             grid-template-columns: auto;
-            align-items: flex-start;
+            align-items: center;
         }
 
-        &-text {
-            padding: 20px;
-        }
-
+        &-text,
         &-contact {
-            padding: 20px;
+            text-align: center;
         }
     }
 }
