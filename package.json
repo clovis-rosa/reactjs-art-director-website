@@ -19,6 +19,7 @@
     "design"
   ],
   "dependencies": {
+    "@u-wave/react-vimeo": "^0.9.1",
     "disable-scroll": "^0.5.1",
     "gsap": "^3.5.1",
     "react": "^17.0.1",

@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom"
-import data from "../data"
-
 const Footer = () => {
     return (
         <footer className='footer'>

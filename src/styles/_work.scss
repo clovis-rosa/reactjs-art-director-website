@@ -1,0 +1,167 @@
+.work {
+    padding: 40px 0;
+    margin-top: 50px;
+
+    &-container {
+        max-width: 96%;
+        margin: 0 auto;
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: 1fr 4fr 2fr;
+        gap: 50px;
+
+        &_title {
+            min-width: 150px;
+            font-family: var(--font-family-primary);
+            font-size: calc(
+                16px + (20 - 16) * ((100vw - 320px) / (1600 - 320))
+            );
+        }
+
+        &_client {
+            display: inline-flex;
+            flex-direction: column;
+            min-width: 200px;
+            font-family: var(--font-family-primary);
+            font-size: calc(
+                18px + (26 - 18) * ((100vw - 320px) / (1600 - 320))
+            );
+        }
+    }
+
+    &-image {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+
+        img {
+            width: 100%;
+            height: 90%;
+            object-fit: cover;
+        }
+    }
+
+    div[data-vimeo-initialized] {
+        margin-top: 50px;
+        padding: 100px;
+    }
+
+    &-gallery {
+        display: grid;
+        //   grid-template-columns: repeat(3, 1fr);
+        grid: auto / repeat(2, minmax(300px, 1fr));
+        gap: 20px;
+
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+
+        img {
+            width: 100%;
+            height: 90%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 1224px) {
+    .work {
+        &-grid {
+            margin-bottom: 60px;
+        }
+
+        &-image {
+            margin-top: 0;
+        }
+        div[data-vimeo-initialized] {
+            // margin-top: 50px;
+            padding: 40px 40px;
+        }
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width: 768px) {
+    .work {
+        padding: 20px 10px;
+        margin-top: 20px;
+
+        &-grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        &-image {
+            margin-top: 0;
+            gap: 10px;
+        }
+
+        div[data-vimeo-initialized] {
+            margin-top: 40px;
+            padding: 20px 0px;
+        }
+
+        &-gallery {
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 40px;
+        }
+    }
+}
+
+/* Small Tablets (portrait) ----------- */
+@media only screen and (max-width: 480px) {
+    .work {
+        padding: 20px 10px;
+        margin-top: 20px;
+
+        &-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        &-image {
+            grid-template-columns: 1fr;
+            margin-top: 40px;
+            gap: 10px;
+            height: 50%;
+        }
+
+        div[data-vimeo-initialized] {
+            margin-top: 40px;
+            padding: 20px 0px;
+        }
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+    .work {
+        padding: 20px 10px;
+        margin-top: 0;
+
+        &-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        &-image {
+            grid-template-columns: 1fr;
+            margin-top: 40px;
+            gap: 10px;
+        }
+
+        div[data-vimeo-initialized] {
+            margin-top: 40px;
+            padding: 0;
+        }
+    }
+}

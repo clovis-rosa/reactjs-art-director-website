@@ -1612,10 +1612,23 @@
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.1.5.tgz#b6ab3bba29e16b821d84e09ecfaded462b816b00"
   integrity sha512-UEyp8LwZ4Dg30kVU2Q3amHHyTn1jEdhCIE59ANed76GaT1Vp76DD3ZWSAxgCrw6wJ0TqeoBpqmfUHiUDPs//HQ==
 
+"@types/prop-types@*":
+  version "15.7.3"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
+  integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+
 "@types/q@^1.5.1":
   version "1.5.4"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
+
+"@types/react@^16.9.32":
+  version "16.9.56"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.56.tgz#ea25847b53c5bec064933095fc366b1462e2adf0"
+  integrity sha512-gIkl4J44G/qxbuC6r2Xh+D3CGZpJ+NdWTItAPmZbR5mUS+JQ8Zvzpl0ea5qT/ZT3ZNTUcDKUVqV3xBE8wv/DyQ==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^3.0.2"
 
 "@types/resolve@0.0.8":
   version "0.0.8"
@@ -1645,6 +1658,11 @@
   integrity sha512-7npvPKV+jINLu1SpSYVWG8KvyJBhBa8tmzMMdDoVc2pWUYHN8KIXlPJhjJ4LT97c4dXJA2SHL/q6ADbDriZN+Q==
   dependencies:
     source-map "^0.6.1"
+
+"@types/vimeo__player@^2.9.0":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@types/vimeo__player/-/vimeo__player-2.9.1.tgz#4de8583753a1480a1b5dbc6dcf5ec21c55c67e1a"
+  integrity sha512-L6XHWenPkN+WHFWmo/fhA70kTQnNUxOs3bQS3nF/FK3kv+UzEVRqPEkxJNUZWExwrhOKaTKzplZHmxYwmr0SJA==
 
 "@types/webpack-sources@*":
   version "2.0.0"
@@ -1785,6 +1803,24 @@
   dependencies:
     "@typescript-eslint/types" "4.6.1"
     eslint-visitor-keys "^2.0.0"
+
+"@u-wave/react-vimeo@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@u-wave/react-vimeo/-/react-vimeo-0.9.1.tgz#675feff13f12a7d665723419ce8c4bf3691d46e2"
+  integrity sha512-1ljNKNNrT3Ox1egc9q9MJLHqLJZo/5VKtDgR/aPwv5mDkMgKTI9WaVUbQmtIUXqA9dds5p1Ob9p8KIjppU/fKw==
+  dependencies:
+    "@types/react" "^16.9.32"
+    "@types/vimeo__player" "^2.9.0"
+    "@vimeo/player" "^2.10.0"
+    prop-types "^15.7.2"
+
+"@vimeo/player@^2.10.0":
+  version "2.14.1"
+  resolved "https://registry.yarnpkg.com/@vimeo/player/-/player-2.14.1.tgz#f35fd141fbd096555d1090e53625364cb0874fff"
+  integrity sha512-PXIATVxUfblTbRoSXzNcplJFjsho6e32ltfEm4po/RFZcAOYefOO4mjxDMGUTAzo937DZvjd5n1u7+EfGHuLPw==
+  dependencies:
+    native-promise-only "0.8.1"
+    weakmap-polyfill "2.0.1"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
@@ -3643,6 +3679,11 @@ cssstyle@^2.2.0:
   integrity sha512-AZL67abkUzIuvcHqk7c09cezpGNcxUxU4Ioi/05xHk4DQeTkWmGYftIE6ctU6AEt+Gn4n1lDStOtj7FKycP71A==
   dependencies:
     cssom "~0.3.6"
+
+csstype@^3.0.2:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.5.tgz#7fdec6a28a67ae18647c51668a9ff95bb2fa7bb8"
+  integrity sha512-uVDi8LpBUKQj6sdxNaTetL6FpeCqTjOvAQuQUa/qAqq8oOd4ivkbhgnqayl0dnPal8Tb/yB1tF+gOvCBiicaiQ==
 
 cyclist@^1.0.1:
   version "1.0.1"
@@ -7241,6 +7282,11 @@ nanomatch@^1.2.9:
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
+
+native-promise-only@0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/native-promise-only/-/native-promise-only-0.8.1.tgz#20a318c30cb45f71fe7adfbf7b21c99c1472ef11"
+  integrity sha1-IKMYwwy0X3H+et+/eyHJnBRy7xE=
 
 native-url@^0.2.6:
   version "0.2.6"
@@ -10930,6 +10976,11 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   integrity sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==
   dependencies:
     minimalistic-assert "^1.0.0"
+
+weakmap-polyfill@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/weakmap-polyfill/-/weakmap-polyfill-2.0.1.tgz#ff0278c7f75bb0c492fc3343257f3e87114d709a"
+  integrity sha512-Jy177Lvb1LCrPQDWJsXyyqf4eOhcdvQHFGoCqSv921kVF5i42MVbr4e2WEwetuTLBn1NX0IhPzTmMu0N3cURqQ==
 
 webidl-conversions@^5.0.0:
   version "5.0.0"

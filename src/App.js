@@ -5,6 +5,7 @@ import {
     useLocation,
 } from "react-router-dom"
 import Home from "./pages/home"
+import Work from "./pages/work"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 
@@ -27,10 +28,6 @@ const App = () => {
 }
 
 export default App
-
-function Work() {
-    return <p>Discover our numerous opportunities</p>
-}
 
 function Concept() {
     return <p>Solutions that help you.</p>
