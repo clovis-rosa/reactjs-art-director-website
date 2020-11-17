@@ -2,7 +2,7 @@
 
 > This is a project website for a Designer/Art Director Portfolio
 
-Website deployed at Vercel.com - [** ⚡ ReactJS Art Director Website - https://**](https://)
+Website deployed at Vercel.com - [** ⚡ ReactJS Art Director Website - http://reactjs-art-director-website.vercel.app/**](http://reactjs-art-director-website.vercel.app/)
 
 ---
 
@@ -37,10 +37,10 @@ A quick look at the dependencies amd resources:
 
 -   Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 -   [Disable scroll](https://github.com/gilbarbara/disable-scroll) Disable page scroll by adding event listeners and locking the scroll position.
--   [Blurry VHS Image Effect Filter](https://codemyui.com/blurry-vhs-image-effect-filter) This is a retro glitch image effect for image galleries by Sam Beckham.
-- [@u-wave/react-vimeo](https://www.npmjs.com/package/@u-wave/react-vimeo) Vimeo player component for React.
+-   [@u-wave/react-vimeo](https://www.npmjs.com/package/@u-wave/react-vimeo) Vimeo player component for React.
 -   [Text Moji App](https://textmoji.app/) Small text icons meant for Slack but also can use for faviconning.
-
+-   [Shoot Device Mock](https://shooot.bourhaouta.com/) Mocking your browser/phone
+-   [Blurry VHS Image Effect Filter](https://codemyui.com/blurry-vhs-image-effect-filter) This is a retro glitch image effect for image galleries by Sam Beckham.
 
 ## 💫 Deploying
 
@@ -49,7 +49,9 @@ A quick look at the dependencies amd resources:
 ---
 
 Screenshots:
-![example image](artdirector-website.webp "ReactJS Art Director Website")
+![Home Page](reactjs-art-director-website-home.webp "Home Page")
+![Project Page](reactjs-art-director-website-work.webp "Project Page")
+![About Page](reactjs-art-director-website-about.webp "About Page")
 
 ---
 
