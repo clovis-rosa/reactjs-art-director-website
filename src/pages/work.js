@@ -17,7 +17,7 @@ function Work() {
             <div className='work-container'>
                 <div className='work-grid'>
                     <div className='work-grid_title'>
-                        <strong>Graffit</strong> / London City
+                        <strong>Graffiti</strong> / London City
                     </div>
                     <p className='work-grid_description'>
                         Harold Trevino who took the where not world yield five.
@@ -38,7 +38,7 @@ function Work() {
                     <img src={image02} alt='Unsplash Images' />
                     <img src={image03} alt='Unsplash Images' />
                 </div>
-                <Vimeo video='70852373' autoplay responsive />
+                <Vimeo video='70852373' responsive />
                 <div className='work-gallery'>
                     <img src={image04} alt='Unsplash Images' />
                     <img src={image05} alt='Unsplash Images' />

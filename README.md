@@ -38,7 +38,9 @@ A quick look at the dependencies amd resources:
 -   Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 -   [Disable scroll](https://github.com/gilbarbara/disable-scroll) Disable page scroll by adding event listeners and locking the scroll position.
 -   [Blurry VHS Image Effect Filter](https://codemyui.com/blurry-vhs-image-effect-filter) This is a retro glitch image effect for image galleries by Sam Beckham.
+- [@u-wave/react-vimeo](https://www.npmjs.com/package/@u-wave/react-vimeo) Vimeo player component for React.
 -   [Text Moji App](https://textmoji.app/) Small text icons meant for Slack but also can use for faviconning.
+
 
 ## 💫 Deploying
 

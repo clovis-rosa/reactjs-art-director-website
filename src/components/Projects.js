@@ -9,20 +9,12 @@ const Projects = () => {
                 {data.map(({ id, title, type, image }) => (
                     <article className='project-article' key={id}>
                         <div className='project-wrapper'>
-                            <Link
-                                className='project-link'
-                                to={title
-                                    .replace(/\s+/g, "-")
-                                    .toLocaleLowerCase()}>
+                            <Link className='project-link' to='/work'>
                                 {title}
                                 <span> ︎</span>
                             </Link>
                             <h2 className='project-subtitle'>{type}</h2>
-                            <Link
-                                className='project-image'
-                                to={title
-                                    .replace(/\s+/g, "-")
-                                    .toLocaleLowerCase()}>
+                            <Link className='project-image' to='/work'>
                                 <img src={`/images/${image}`} alt={title} />
                             </Link>
                         </div>
