@@ -33,19 +33,19 @@ function Work() {
                         <span>Client: El Almendro</span>
                     </div>
                 </div>
-                <div className='work-image'>
+                <div className='work-image_landscape'>
                     <img src={image01} alt='lucas gallone' />
                     <img src={image02} alt='jean philippe delberghe' />
                     <img src={image03} alt='mathilde decourcelle' />
                 </div>
-                <Vimeo video='70852373' responsive paused />
-                <div className='work-gallery'>
+                <Vimeo video='70852373' responsive paused allowfullscreen />
+                <div className='work-image_gallery'>
                     <img src={image04} alt='jon tyson' />
                     <img src={image05} alt='dan farrell' />
                     <img src={image06} alt='juan carlos trujillo' />
                     <img src={image07} alt='romain morel' />
                 </div>
-                <div className='work-image'>
+                <div className='work-image_portrait'>
                     <img src={image08} alt='romain morel' />
                     <img src={image09} alt='meric dagli' />
                     <img src={image10} alt='zane lee' />
